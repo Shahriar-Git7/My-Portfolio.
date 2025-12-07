@@ -119,7 +119,7 @@ li a:hover::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #38a2d7, #561139);
+  background-image: linear-gradient(to left #014871, #d7ede2);
 }
 
 .home-content h3 {
@@ -175,30 +175,30 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid #ffd166;
+  border: 0.2rem solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   font-size: 2rem;
-  color: #561139;
+  color: #ffffff;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 /* Icon hover effect */
 .social-media a:hover {
-  background: #561139;
+  background: #0877a6;
   color: var(--snd--bg--color);
-  box-shadow: 0 0 2rem rgba(255, 209, 102, 0.8);
+  box-shadow: 0 0 0.7rem rgba(255, 255, 255, 0.8);
 }
 
 /* ---------------------- BUTTON STYLE ---------------------- */
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: #ffd166;
+  background: #4dd0e1;
   border-radius: 4rem;
-  box-shadow: 0 0 1rem rgba(255, 209, 102, 0.5);
+  box-shadow: 0 0 2rem rgba(255, 209, 102, 0.4);
   font-size: 1.6rem;
-  color: #561139;
+  color: #80185a;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
@@ -206,6 +206,7 @@ span {
 
 .btn:hover {
   box-shadow: none;
+  transform: scale(1.02);
 }
 
 /* ---------------------- ABOUT SECTION ---------------------- */
