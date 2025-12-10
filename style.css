@@ -420,3 +420,86 @@ span {
   color: #1a73e8;
   border-color: #1a73e8;
 }
+
+/* ---------------------- SERVICES SECTION ---------------------- */
+
+.services {
+  background: linear-gradient(180deg, #38a2d7 0%, #561139 100%);
+  color: #ffffff;
+}
+
+.services h1 {
+  margin-bottom: 5rem;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Services container layout */
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Individual service box  */
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+  transition: 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Hover animation and color  */
+.services-container .services-box:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(18px);
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon  */
+.services-box i {
+  font-size: 7rem;
+  color: #ffdd59;
+  margin-bottom: 1.5rem;
+}
+
+/* Service title */
+.services-box h3 {
+  font-size: 2.6rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Service description */
+.services-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+  color: #e0e0e0;
+}
+
+/* Button  */
+.services-box a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff7f50;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.services-box a:hover {
+  background: #ff9933;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
