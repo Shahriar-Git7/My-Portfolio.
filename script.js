@@ -43,4 +43,19 @@ ScrollReveal({
     delay: 200
 });
 
+/*--------------------scroll reveal-------------------- */
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
+
+
+/*--------------------typed js-------------------- */
+const typed = new Typed('.multiple-text' , {
+    strings: ['Web Development', 'Frontend Development', 'Backend Development', 'Full Stack Development'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true
+})
 

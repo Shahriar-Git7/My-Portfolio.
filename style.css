@@ -230,7 +230,7 @@ span {
 }
 
 .about-img img {
-  width: 35vw;
+  width: 25vw;
   border-radius: 15px;
 }
 
@@ -454,6 +454,9 @@ span {
 .contact {
   background: linear-gradient(135deg, #d96aa7, #173b5a);
 }
+.contact h1 {
+  font-size: 4.5rem;
+}
 .contact-left {
   flex-basis: 35%;
 }
@@ -535,7 +538,7 @@ form .btn.btn2 {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: #561139;
+  background: #4dd0e1;
 }
 
 .footer-text {
@@ -548,6 +551,12 @@ form .btn.btn2 {
   justify-content: center;
   align-items: center;
   padding: 0.8rem 1rem;
+  background: #38a2d7;
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem #173b5a;
 }
 
 /* ---------------------- BREAKPOINT ---------------------- */
