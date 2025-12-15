@@ -36,7 +36,7 @@
           <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#blog">Blogs</a>
+          <a href="#education">Education</a>
         </li>
         <li>
           <a href="#services">Services</a>
@@ -267,68 +267,6 @@
       </div>
     </section>
 
-    <!--===== BLOGS SECTION DESIGN =====-->
-    <section class="blogs" id="blog">
-      <div class="headings">
-        <h1>Our Blog</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at
-          molestias omnis dolores. Quo, odio?
-        </p>
-      </div>
-      <div class="swiper blogSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- slide 1 -->
-            <div class="blog_slide">
-              <div class="blog_img">
-                <img src="images/Breakout.jpg" alt="image" />
-              </div>
-              <div class="blog_content">
-                <h2>Better User Interface</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  eaque quas fugit laboriosam ea quisquam?
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <!-- slide 2 -->
-            <div class="blog_slide">
-              <div class="blog_img">
-                <img src="images/Breakout.jpg" alt="image" />
-              </div>
-              <div class="blog_content">
-                <h2>Better User Interface</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  eaque quas fugit laboriosam ea quisquam?
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <!-- slide 3 -->
-            <div class="blog_slide">
-              <div class="blog_img">
-                <img src="images/Breakout.jpg" alt="image" />
-              </div>
-              <div class="blog_content">
-                <h2>Better User Interface</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  eaque quas fugit laboriosam ea quisquam?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!--===== SERVICES SECTION DESIGN =====-->
 
     <section class="services" id="services">
@@ -390,7 +328,7 @@
             </div>
 
             <div class="contact-right">
-              <form>
+              <form name="submit-to-google-sheet">
                 <input
                   type="text"
                   name="Name"
@@ -410,6 +348,7 @@
                 ></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
               </form>
+              <span id="msg"></span>
             </div>
           </div>
         </div>
@@ -419,7 +358,7 @@
     <!--===== FOOTER SECTION DESIGN =====-->
     <footer class="footer">
       <div class="footer-text">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Copyright &#169; Shahriar.All right reserved</p>
       </div>
 
       <div class="footer-iconTop">
@@ -428,6 +367,30 @@
     </footer>
     <!--===== SCROLL REVEAL Js =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== TYPED JS =====-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxAEGlwYOMmnqlERbR1Cpxi9m1lA4aXHJXl55zBtLwObDLsO_90_ZQl5ae-zQGG_FnGzQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
 

@@ -531,6 +531,13 @@ form .btn.btn2 {
   background: #38a2d7;
 }
 
+#msg {
+  font-size: 18px;
+  color: #61b752;
+  margin-top: 20px;
+  display: block;
+}
+
 /* ---------------------- FOOTER SECTION ---------------------- */
 .footer {
   display: flex;
@@ -580,6 +587,7 @@ form .btn.btn2 {
   .portfolio {
     padding-bottom: 7rem;
   }
+
   .contact {
     min-height: auto;
   }
@@ -632,6 +640,7 @@ form .btn.btn2 {
 .portfolio-container {
   grid-template-columns: repeat(2, 1fr);
 }
+
 @media (max-width: 600px) {
   header #menu-icon {
     display: block;
