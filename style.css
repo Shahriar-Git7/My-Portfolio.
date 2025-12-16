@@ -789,6 +789,9 @@ form .btn.btn2 {
   .portfolio {
     padding-bottom: 7rem;
   }
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .education-section {
     padding: 7rem;
   }
@@ -813,12 +816,14 @@ form .btn.btn2 {
   }
   .home {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .home-content h3 {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
   .home-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .home-content {
     order: 2;
@@ -832,10 +837,11 @@ form .btn.btn2 {
   }
   .about {
     flex-direction: column;
+    align-items: center;
   }
   .about-img img {
-    width: 80vw;
-    margin-bottom: 4rem;
+    width: 90%;
+    margin-bottom: 2rem;
   }
 }
 .services h1 {
@@ -853,6 +859,7 @@ form .btn.btn2 {
 .education-section .heading {
   margin-bottom: 100px;
 }
+
 @media (max-width: 600px) {
   header #menu-icon {
     display: block;
@@ -890,6 +897,10 @@ form .btn.btn2 {
   .about-img img {
     width: 100vw;
     margin-bottom: 4rem;
+  }
+  .contact-right form input,
+  .contact-right form textarea {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
