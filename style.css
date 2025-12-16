@@ -636,7 +636,7 @@ span {
 .blog-btn {
   display: inline-block;
   margin-top: 15px;
-  color: #64ffda;
+  color: #8892b0;
   font-size: 20px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -821,8 +821,11 @@ form .btn.btn2 {
     order: 2;
   }
   .home-img img {
-    width: 50vw;
+    width: 250px;
+    height: 250px;
     margin-top: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
   }
   .about {
     flex-direction: column;
