@@ -567,6 +567,85 @@ span {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* ---------------------- BLOG SECTION ---------------------- */
+.blog {
+  background-color: #23494a;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#blog .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-header h2 {
+  margin-bottom: 5rem;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#blog .blog-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  background: #d58309;
+  padding: 35px 30px;
+  width: 320px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.blog-card h2 {
+  color: #c20a0a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.blog-subtitle {
+  font-size: 22px;
+}
+
+.blog-date {
+  font-size: 12px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+}
+
+.blog-card p {
+  color: black;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.blog-btn {
+  display: inline-block;
+  margin-top: 15px;
+  color: #4dd0e1;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.blog-btn:hover {
+  border-bottom: 1px solid #ff4a57;
+}
+
 /* ---------------------- CONTACT SECTION ---------------------- */
 .contact {
   background: linear-gradient(135deg, #d96aa7, #173b5a);
@@ -701,7 +780,9 @@ form .btn.btn2 {
   .services {
     padding: 7rem;
   }
-
+  .blog {
+    padding-bottom: 7rem;
+  }
   .portfolio {
     padding-bottom: 7rem;
   }
@@ -754,7 +835,9 @@ form .btn.btn2 {
 .services h1 {
   margin-bottom: 3rem;
 }
-
+.blog-content h1 {
+  margin-bottom: 3rem;
+}
 .portfolio h2 {
   margin-bottom: 3rem;
 }
