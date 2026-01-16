@@ -97,16 +97,16 @@ li a:hover::before {
   border-radius: 3rem;
   border: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   cursor: pointer;
   white-space: nowrap;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, #23494a, #bfffc7);
+  background: linear-gradient(to right, #211ae5, #dee51a);
 }
 
 .visit-btn:hover {
-  background: linear-gradient(to right, #bfffc7, #23494a);
+  background: linear-gradient(to right, #dee51a, #211ae5);
   transform: scale(1.03);
 }
 #menu-icon {
@@ -449,19 +449,19 @@ span {
 
 .card:nth-child(2),
 .card:nth-child(2):before {
-  background: #ff4f4f;
+  background: #4eb178;
 }
 .card:nth-child(3),
 .card:nth-child(3):before {
-  background: #6a0404;
+  background: #4e55b1;
 }
 .card:nth-child(4),
 .card:nth-child(4):before {
-  background: #d58309;
+  background: #b14e87;
 }
 .card:nth-child(5),
 .card:nth-child(5):before {
-  background: #173b5a;
+  background: #b1aa4e;
 }
 .card:nth-child(6),
 .card:nth-child(6):before {
@@ -478,7 +478,9 @@ span {
   border: 1px dashed #fff;
   z-index: -1;
 }
-
+.card-body p {
+  font-size: 20px;
+}
 .card-title {
   font-size: 30px;
   font-weight: 300;
