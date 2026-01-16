@@ -669,6 +669,10 @@ span {
   gap: 30px;
 }
 
+.section-title {
+  font-size: 60px;
+  margin-bottom: 5rem;
+}
 .ach-card {
   background: linear-gradient(135deg, #38a2d7, #561139);
   width: 300px;
