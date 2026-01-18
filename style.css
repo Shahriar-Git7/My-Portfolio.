@@ -376,7 +376,7 @@ span {
   top: 0;
   opacity: 0.95;
   transition: 1s;
-  background-color: #1b263b; /* deep academic blue */
+  background-color: #1b263b;
 }
 
 .education-section .heading {
@@ -452,27 +452,27 @@ span {
 
 .card:nth-child(2),
 .card:nth-child(2):before {
-  background: #e09f3e; /* golden achievement */
+  background: #e09f3e;
 }
 
 .card:nth-child(3),
 .card:nth-child(3):before {
-  background: #457b9d; /* calm blue */
+  background: #457b9d;
 }
 
 .card:nth-child(4),
 .card:nth-child(4):before {
-  background: #c44536; /* academic red */
+  background: #c44536;
 }
 
 .card:nth-child(5),
 .card:nth-child(5):before {
-  background: #6a994e; /* growth green */
+  background: #6a994e;
 }
 
 .card:nth-child(6),
 .card:nth-child(6):before {
-  background: #9d4edd; /* highlight purple */
+  background: #9d4edd;
 }
 
 .card:nth-child(even) .card-body::before {
@@ -671,11 +671,7 @@ span {
 #achievement {
   padding: 100px 0;
   text-align: center;
-  background: linear-gradient(
-    135deg,
-    #0f1c2e,
-    #1b263b
-  ); /* deep professional background */
+  background: linear-gradient(135deg, #0f1c2e, #1b263b);
   color: #ffffff;
 }
 
@@ -695,11 +691,7 @@ span {
 }
 
 .ach-card {
-  background: linear-gradient(
-    135deg,
-    #3a5a40,
-    #588157
-  ); /* calm professional gradient */
+  background: linear-gradient(135deg, #3a5a40, #588157);
   width: 300px;
   padding: 30px;
   border-radius: 15px;
@@ -721,7 +713,7 @@ span {
 .ach-icon {
   font-size: 50px;
   margin-bottom: 20px;
-  color: #ffd166; /* highlight color for achievement */
+  color: #ffd166;
   transition:
     0.3s ease color,
     0.3s ease transform;
