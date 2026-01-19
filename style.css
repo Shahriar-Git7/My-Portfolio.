@@ -1008,3 +1008,226 @@ form .btn.btn2 {
     width: 100%;
   }
 }
+/* ================= MOBILE (max-width: 576px) ================= */
+@media (max-width: 576px) {
+  /* Section padding */
+  section {
+    padding: 8rem 5% 2rem;
+  }
+
+  /* Header adjustments */
+  .header {
+    gap: 1.5rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--snd--bg--color);
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3rem;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .visit-btn {
+    display: none;
+  }
+
+  /* Home section */
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 3.4rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .home-img img {
+    width: 60vw;
+    height: auto;
+    margin-top: 6rem;
+    border-radius: 50%;
+  }
+
+  /* About section */
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img img {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  /* Portfolio section */
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Education section */
+  .education-section {
+    padding: 6rem 2rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .card::before,
+  .card::after {
+    display: none;
+  }
+
+  /* Blog section */
+  .blog-card {
+    width: 100%;
+  }
+
+  /* Contact section */
+  .contact-right form input,
+  .contact-right form textarea {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* ================= TABLET (577px – 991px) ================= */
+@media (min-width: 577px) and (max-width: 991px) {
+  /* Section padding */
+  section {
+    padding: 9rem 6% 2rem;
+  }
+
+  /* Header adjustments */
+  .header {
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  .home {
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* About section */
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-img img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  /* Portfolio section */
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Education section */
+  .education-section {
+    padding: 7rem 4rem;
+  }
+
+  .card {
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  .card::before,
+  .card::after {
+    display: none;
+  }
+
+  /* Blog section */
+  .blog-card {
+    width: 48%;
+  }
+
+  /* Contact section */
+  .contact-right form input,
+  .contact-right form textarea {
+    width: 100%;
+  }
+}
+
+/* ================= DESKTOP (992px – 1200px) ================= */
+@media (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 10rem 5% 2rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-section {
+    padding: 8rem 5%;
+  }
+
+  .blog-card {
+    width: 48%;
+  }
+}
